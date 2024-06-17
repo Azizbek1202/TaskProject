@@ -1,4 +1,4 @@
-import { Box, Container, IconButton, Typography, Grid } from '@mui/material';
+import { Box, IconButton, Typography, Grid } from '@mui/material';
 import React from 'react';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';

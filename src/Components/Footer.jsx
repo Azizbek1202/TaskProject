@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography fontFamily="Poppins"} from '@mui/material'
+import { Box, Grid, Typography} from '@mui/material'
 import React from 'react'
 
 const Footer = () => {

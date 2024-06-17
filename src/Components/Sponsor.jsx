@@ -1,4 +1,4 @@
-import { Box, Container, Typography fontFamily="Poppins"} from '@mui/material'
+import { Box, Container, Typography} from '@mui/material'
 import React from 'react'
 import jaga from '../assets/image/jaga.png'
 import gopay from '../assets/image/gopay.png';

@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, Typography fontFamily="Poppins"} from '@mui/material';
+import { Box, Button, Container, Grid, Typography} from '@mui/material';
 import React from 'react';
 import styled from 'styled-components';
 import PropertyCard from './Card';
