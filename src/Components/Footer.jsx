@@ -13,7 +13,7 @@ const Footer = () => {
                             We help you in the home construction process and interior design for your dream home.
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} md={9} width="60%" display="flex">
+                    <Grid item xs={12} md={9} width="57%" display="flex">
                         <Grid item xs={6} md={3} marginRight="62px">
                             <Typography fontFamily="Poppins"variant='h5' marginBottom="24px" fontWeight="500" fontSize="24px" lineHeight="34px">
                                 About Us

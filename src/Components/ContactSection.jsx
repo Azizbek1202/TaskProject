@@ -13,7 +13,6 @@ const GradientButton = styled(Button)({
   height: 48,
   padding: '0 50px',
   fontSize: '16px',
-  pointerEvents: 'none'
 });
 
 const ContactSection = () => {
@@ -91,7 +90,7 @@ const ContactSection = () => {
               }}
               sx={{backgroundColor: "#F0F2F4", padding:"14px", borderRadius:"15px", marginTop:"0"}}
             />
-            <GradientButton type="submit" style={{ marginTop: '20px', borderRadius: "50px", fontSize: 16, fontWeight: "400", lineHeight: "24px", textTransform: 'none', color:"white" }} >
+            <GradientButton type="submit" style={{ marginTop: '20px', borderRadius: "50px", fontSize: 16, fontWeight: "400", lineHeight: "24px", textTransform: 'none', color:"white", cursor: "pointer"}} >
               Submit Now
             </GradientButton>
           </Box>

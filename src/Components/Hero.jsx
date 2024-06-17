@@ -19,10 +19,10 @@ const GradientButton = styled(Button)({
 const Hero = () => {
     return (
         <Box sx={{ backgroundColor: "rgba(22, 21, 22, 1)", paddingTop:"75px", paddingBottom: "44px"}}>
-                <Box sx={{height: "110px", position: "absolute", boxShadow: "10px 10px 300px 100px rgba(217, 217, 217, 1)",  borderRadius: "50%", left:"-55px", top: "230px", opacity:"0.3"}}>
+                <Box sx={{height: "110px", position: "absolute", boxShadow: "10px 10px 400px 180px rgba(217, 217, 217, 1)",  borderRadius: "50%", left:"-55px", top: "230px", opacity:"0.3"}}>
                 </Box>
                 <Box display={{ xs: 'block', sm: 'flex' }} width="82vw">
-                    <Typography fontFamily="Poppins"variant="h3" component="h1" gutterBottom sx={{ fontSize:"54px", fontWeight:"600", color: '#fff', lineHeight: "74px" }}>
+                    <Typography fontFamily="Poppins"variant="h3" component="h1" gutterBottom sx={{ fontSize:"64px", fontWeight:"600", color: '#fff', lineHeight: "74px" }}>
                         The Best Place To Find Your Dream <span style={{ color: '#ff6b35' }}>Property</span>
                     </Typography>
                     <Box sx={{padding:"45px 76px 45px 129px"}}>
@@ -37,7 +37,7 @@ const Hero = () => {
                 <Box sx={{marginTop: "44px", display:"flex", justifyContent: "center", marginBottom:"16px"}}>
                     <img src={pic} alt="Dream Property" style={{ width: '83%', borderRadius: '10px' }} />
                 </Box>
-                <Grid sx={{display: "flex", justifyContent:"center", padding: "10px 32px", position: "absolute", bottom: '-34%',left:"30%", background:"rgba(255, 255, 255, 0.002)", backdropFilter: "blur(6px)", WebkitBackdropFilter:"blur(10px)", borderRadius:"15px", color:"#fff", textAlign:"center", border: "3px solid rgba(255, 255, 255, 0.59)"}}>
+                <Grid sx={{display: "flex", justifyContent:"center", padding: "10px 32px", position: "absolute", bottom: '-26%',left:"31%", background:"rgba(255, 255, 255, 0.002)", backdropFilter: "blur(6px)", WebkitBackdropFilter:"blur(10px)", borderRadius:"15px", color:"#fff", textAlign:"center", border: "3px solid rgba(255, 255, 255, 0.59)"}}>
                     <Grid item xs={12} sm={4}>
                         <Typography fontFamily="Poppins"variant="h4" component="h2" style={{ color: 'white', textAlign: "center", fontWeight:"600", fontSize:"32px", lineHeight:"44px" }}>
                             300<span style={{ color: "#E97951" }}>+</span>
