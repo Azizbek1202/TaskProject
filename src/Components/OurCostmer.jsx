@@ -4,7 +4,13 @@ import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import TestimonialCard from './Testimonial';
 import boy from '../assets/image/boy.png';
-import bg from '../assets/image/bg.jpg'; 
+import bg from '../assets/image/bg.jpg';
+import styled from 'styled-components';
+
+const StyledArrowLeftIcon = styled(ArrowLeftIcon)(({ theme }) => ({
+  width: '24px',
+  height: '24px',
+}));
 
 const OurCostmer = () => {
   return (
@@ -12,18 +18,19 @@ const OurCostmer = () => {
       sx={{
         width: '100%',
         paddingTop: "70px",
-        backgroundImage: `url(${bg})`, 
+        paddingBottom: "72px",
+        backgroundImage: `url(${bg})`,
         backgroundAttachment: 'inherit',
-        backgroundRepeat: 'no-repeat',
         backgroundColor: 'rgba(22, 21, 22, 1)',
         marginBottom: "30px"
       }}
     >
-      <Container>
+      <Box width="85%">
         <Box
           display="flex"
           justifyContent='space-between'
           alignItems="center"
+          width="100%"
           sx={{ flexDirection: { xs: "column", sm: "column", md: "row" } }}
         >
           <Typography
@@ -40,17 +47,18 @@ const OurCostmer = () => {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              flexDirection: { xs: "column", sm: "column", md: "row" }
+              flexDirection: { xs: "column", sm: "column", md: "row" },
+              marginRight: "5px"
             }}
           >
-            <Grid container justifyContent="center" alignItems="center">
+            <Grid display="flex" justifyContent="end" alignItems="center">
               <Grid item>
-                <IconButton sx={{ bgcolor: '#E45826', color: 'white', m: 1 }}>
-                  <ArrowLeftIcon />
+                <IconButton sx={{ bgcolor: '#E45826', color: 'white', m: 1}}>
+                  <StyledArrowLeftIcon/>
                 </IconButton>
               </Grid>
               <Grid item>
-                <IconButton sx={{ bgcolor: '#E45826', color: 'white', m: 1 }}>
+                <IconButton sx={{ bgcolor: '#E45826', color: 'white', m: 1}}>
                   <ArrowRightIcon />
                 </IconButton>
               </Grid>
@@ -62,10 +70,10 @@ const OurCostmer = () => {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
-            flexDirection: {xs: 'column', md: 'row'}
+            flexDirection: { xs: 'column', md: 'row' }
           }}
         >
-          <TestimonialCard 
+          <TestimonialCard
             name="David Arkham"
             title="Software Engineer"
             testimonial="At first I was hesitant when I wanted to buy a house here, but the results turned out to be beyond my expectations."
@@ -84,7 +92,7 @@ const OurCostmer = () => {
             imageUrl={boy}
           />
         </Box>
-      </Container>
+      </Box>
     </Box>
   )
 }

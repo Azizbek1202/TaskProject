@@ -4,67 +4,65 @@ import pic from '../assets/image/pic.png'
 import styled from 'styled-components';
 
 const GradientButton = styled(Button)({
-    background: 'linear-gradient(45deg, #ffcc33 30%, #ff6b35 90%)',
+    background: 'linear-gradient(102.97deg, #FFD88C 0%, #E45826 100%)',
     border: 0,
-    borderRadius: 30,
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    color: 'white',
-    height: 48,
-    padding: '0 30px',
+    borderRadius: 50,
+    color: 'rgba(255, 255, 255, 1)',
+    width: '138px',
+    height: "60px",
+    padding: '18px, 24px, 18px, 24px',
     fontSize: '16px',
-    textTransform: 'none',
-    pointerEvents: 'none'
+    lineHeight: '24px',
+    gap: '10px',
 });
 
 const Hero = () => {
     return (
-        <Box sx={{ backgroundColor: "black" }}>
-            <Container maxWidth="lg" style={{ padding: '20px', borderRadius: '10px', color: '#fff' }}>
-
-                <Box display={{ xs: 'block', sm: 'flex' }} my={5}>
-                    <Typography variant="h3" component="h1" gutterBottom style={{ color: '#fff', paddingRight: '30px', width: '100%' }}>
+        <Box sx={{ backgroundColor: "rgba(22, 21, 22, 1)", paddingTop:"75px", paddingBottom: "44px"}}>
+                <Box sx={{height: "110px", position: "absolute", boxShadow: "10px 10px 300px 100px rgba(217, 217, 217, 1)",  borderRadius: "50%", left:"-55px", top: "230px", opacity:"0.3"}}>
+                </Box>
+                <Box display={{ xs: 'block', sm: 'flex' }} width="82vw">
+                    <Typography fontFamily="Poppins"variant="h3" component="h1" gutterBottom sx={{ fontSize:"54px", fontWeight:"600", color: '#fff', lineHeight: "74px" }}>
                         The Best Place To Find Your Dream <span style={{ color: '#ff6b35' }}>Property</span>
                     </Typography>
-                    <Box sx={{ padding: { xs: '30px 0', sm: '30px' } }}>
-                        <Typography variant="h6" component="p" gutterBottom fontSize={{ xs: '12px', sm: '14px' }}>
+                    <Box sx={{padding:"45px 76px 45px 129px"}}>
+                        <Typography fontFamily="Poppins"variant="h6" component="p" gutterBottom sx={{fontSize:"16px", fontWeight:"400", lineHeight: "26px", marginBottom: "24px"}} color="#fff">
                             We are a real estate agency that will assist you in building your dreams, we will also assist in making a home design that suits your taste.
                         </Typography>
-                        <GradientButton variant="contained" style={{ backgroundColor: '#ff6b35', marginTop: { xs: '20px', sm: 0 }, borderRadius: "50px", padding: { xs: '10px 20px', sm: '15px 30px' }, fontSize: { xs: '12px', sm: '16px' } }}>
+                        <GradientButton variant="contained"  sx={{borderRadius: "50px", textTransform:'none'}}>
                             Let's Discuss
                         </GradientButton>
                     </Box>
                 </Box>
-                <Box my={5}>
-                    <img src={pic} alt="Dream Property" style={{ width: '100%', borderRadius: '10px' }} />
+                <Box sx={{marginTop: "44px", display:"flex", justifyContent: "center", marginBottom:"16px"}}>
+                    <img src={pic} alt="Dream Property" style={{ width: '83%', borderRadius: '10px' }} />
                 </Box>
-                <Grid container spacing={3} justifyContent="center" sx={{ backgroundColor: 'rgba(255, 255, 255, 0.3)', width: { xs: '100%', sm: '500px' }, borderRadius: '16px', border: "3px solid rgba(27, 26, 27, 0.4)", position: 'absolute', right: '50%', top: {xs: '40%', md: "110%", sm: '50%'}, transform: 'translateX(50%)' }}>
+                <Grid sx={{display: "flex", justifyContent:"center", padding: "10px 32px", position: "absolute", bottom: '-34%',left:"30%", background:"rgba(255, 255, 255, 0.002)", backdropFilter: "blur(6px)", WebkitBackdropFilter:"blur(10px)", borderRadius:"15px", color:"#fff", textAlign:"center", border: "3px solid rgba(255, 255, 255, 0.59)"}}>
                     <Grid item xs={12} sm={4}>
-                        <Typography variant="h4" component="h2" style={{ color: 'white', textAlign: "center" }}>
+                        <Typography fontFamily="Poppins"variant="h4" component="h2" style={{ color: 'white', textAlign: "center", fontWeight:"600", fontSize:"32px", lineHeight:"44px" }}>
                             300<span style={{ color: "#E97951" }}>+</span>
                         </Typography>
-                        <Typography variant="subtitle1" align="center">
+                        <Typography fontFamily="Poppins"variant="subtitle1" align="center" sx={{fontWeight:"400", fontSize:"16px", lineHeight:"26px"}}>
                             Happy Clients
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} sm={4}>
-                        <Typography variant="h4" component="h2" style={{ color: 'white', textAlign: "center" }}>
+                    <Grid item xs={12} sm={4} sx={{marginLeft:"48px"}}>
+                        <Typography fontFamily="Poppins"variant="h4" component="h2" style={{ color: 'white', textAlign: "center", fontWeight:"600", fontSize:"32px", lineHeight:"44px" }}>
                             200<span style={{ color: "#E97951" }}>+</span>
                         </Typography>
-                        <Typography variant="subtitle1" align="center">
+                        <Typography fontFamily="Poppins"variant="subtitle1" align="center" sx={{fontWeight:"400", fontSize:"16px", lineHeight:"26px"}}>
                             Premium Product
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} sm={4}>
-                        <Typography variant="h4" component="h2" style={{ color: 'white', textAlign: "center" }}>
+                    <Grid item xs={12} sm={4} sx={{marginLeft:"48px"}}>
+                        <Typography fontFamily="Poppins"variant="h4" component="h2" style={{ color: 'white', textAlign: "center", fontWeight:"600", fontSize:"32px", lineHeight:"44px" }}>
                             100<span style={{ color: "#E97951" }}>+</span>
                         </Typography>
-                        <Typography variant="subtitle1" align="center">
+                        <Typography fontFamily="Poppins"variant="subtitle1" align="center" sx={{fontWeight:"400", fontSize:"16px", lineHeight:"26px"}}>
                             Award Winnings
                         </Typography>
                     </Grid>
                 </Grid>
-
-            </Container>
         </Box>
     )
 }

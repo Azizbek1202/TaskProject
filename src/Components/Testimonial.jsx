@@ -6,7 +6,7 @@ const TestimonialCard = ({ name, title, testimonial, imageUrl }) => {
     <Box
       sx={{
         width: {md: '32%', xs: "100%", sm:"100%"}, 
-        padding: '20px',
+        padding: '24px',
         paddingTop: '40px',
         borderRadius: '10px',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
@@ -15,7 +15,6 @@ const TestimonialCard = ({ name, title, testimonial, imageUrl }) => {
         position: 'relative',
         margin: '20px auto', 
         marginTop: '110px'
-
       }}
     >
       <Avatar
@@ -32,23 +31,15 @@ const TestimonialCard = ({ name, title, testimonial, imageUrl }) => {
           transform: 'translateX(-50%)' 
         }}
       />
-      <Typography variant="h6" fontWeight="bold" gutterBottom>
+      <Typography fontFamily="Poppins"variant="h6" fontWeight="500" fontSize="20px" lineHeight="32px" gutterBottom>
         {name}
       </Typography>
-      <Typography variant="subtitle1" color="#E39A80" gutterBottom>
+      <Typography fontFamily="Poppins"variant="subtitle1" color="#E97951" gutterBottom fontWeight="400" fontSize="14px" lineHeight="24px">
         {title}
       </Typography>
-      <Typography variant="body2" >
+      <Typography fontFamily="Poppins"variant="body2" fontWeight="400" fontSize="16px" lineHeight="26px">
         {testimonial}
       </Typography>
-      <Box
-        sx={{
-          width: '50px',
-          height: '3px',
-          backgroundColor: '#E45826',
-          margin: '20px auto 0',
-        }}
-      ></Box>
     </Box>
   );
 }

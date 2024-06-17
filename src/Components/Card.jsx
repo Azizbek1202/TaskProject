@@ -15,17 +15,19 @@ const StyledCard = styled(Card)({
 
 const StyledCardMedia = styled(CardMedia)(({ height }) => ({
   height: height,
-  objectFit: 'cover', // Rasmlarni avvalgi ravishda ko'rsatish uchun
+  objectFit: 'cover', 
 }));
 
 const StyledCardContent = styled(CardContent)({
-  backgroundColor: 'rgba(0, 0, 0, 0.6)',
+  background: 'rgba(255, 255, 255, 0.05)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(10px)',
   color: 'white',
   position: 'absolute',
   bottom: 0,
   width: '100%',
-  padding: '10px 15px',
   display: 'flex',
+  alignItems: 'center',
   justifyContent: 'space-between',
   borderTopRightRadius: '16px',
   borderTopLeftRadius: '16px'
@@ -37,11 +39,11 @@ const PropertyCard = ({ image, title, location, price, height }) => {
       <StyledCardMedia image={image} title={title} height={height} />
       <StyledCardContent>
         <Box>
-          <Typography variant="h6">{title}</Typography>
-          <Typography variant="body2">{location}</Typography>
+          <Typography fontFamily="Poppins"sx={{fontWeight:"600", fontSize:"24px",lineHeight:"34px"}}>{title}</Typography>
+          <Typography fontFamily="Poppins"variant="body2" sx={{fontWeight:"400", fontSize:"14px",lineHeight:"24px"}}>{location}</Typography>
         </Box>
-        <Box mt={1}>
-          <Typography variant="h6" component="span">
+        <Box>
+          <Typography fontFamily="Poppins"variant="h6" component="span" sx={{fontWeight:"600", fontSize:"20px",lineHeight:"32px"}}>
             {price}
           </Typography>
         </Box>

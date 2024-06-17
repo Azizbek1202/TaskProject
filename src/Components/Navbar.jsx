@@ -4,7 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
+import Typography fontFamily="Poppins"from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
@@ -19,75 +19,46 @@ import Container from '@mui/material/Container';
 import searchIcon from '../assets/icons/Search.svg'
 import cardIcon from '../assets/icons/Cart.svg'
 import userIcon from '../assets/icons/user.svg'
+import hunian from '../assets/image/HUNIAN.png'
 
 
 
 export default function PrimarySearchAppBar() {
-       
+
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static" sx={{ backgroundColor: 'black' }}>
-                <Container> 
-                    <Toolbar display="flex" sx={{justifyContent: "space-between"}}>
-                       
-                        <Typography
-                            variant="h6"
-                            noWrap
-                            component="div"
-                            sx={{ display: { xs: 'none', sm: 'block' } }}
+        <Box >
+            <AppBar position="static" sx={{ background: 'rgba(22, 21, 22, 1)',paddingTop:"3.5px", paddingBottom:"3.5px"}}>
+                <Toolbar display="flex" sx={{ justifyContent: "space-between", alignItems: "center",width:"96vw"}}>
+                    <img src={hunian} alt="" style={{ width: '120px', height: '21px' }} />
+                    <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+                        <Typography fontFamily="Poppins"sx={{ fontSize: 16, cursor: "pointer", fontWeight: "400", marginRight: "52px" }}>HOME</Typography>
+                        <Typography fontFamily="Poppins"sx={{ fontSize: 16, cursor: "pointer", fontWeight: "400", marginRight: "52px" }}>PROPERTY</Typography>
+                        <Typography fontFamily="Poppins"sx={{ fontSize: 16, cursor: "pointer", fontWeight: "400", marginRight: "52px" }}>ABOUT</Typography>
+                        <Typography fontFamily="Poppins"sx={{ fontSize: 16, cursor: "pointer", fontWeight: "400", marginRight: "52px" }}>AGENTS</Typography>
+                        <Typography fontFamily="Poppins"sx={{ fontSize: 16, cursor: "pointer", fontWeight: "400", marginRight: "52px" }}>BLOG</Typography>
+                    </Box>
+
+                    <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+                        <img src={searchIcon} alt="" style={{width:"24px", height:"24px", marginLeft:"32px"}}/>
+                        <img src={cardIcon} alt="" style={{width:"24px", height:"24px", marginLeft:"32px"}}/>
+                        <img src={userIcon} alt="" style={{width:"24px", height:"24px", marginLeft:"32px"}}/>
+                    </Box>
+                    <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+                        <IconButton
+                            size="large"
+                            aria-label="show more"
+
+                            aria-haspopup="true"
+
+                            color="inherit"
                         >
-                            HUNIAN.
-                        </Typography>
-                        <Box sx={{display: { xs: 'none', md: 'flex' }}}>
-                            <Typography sx={{ minWidth: 80, fontSize: 12, cursor: "pointer" }}>HOME</Typography>
-                            <Typography sx={{ minWidth: 80, fontSize: 12, cursor: "pointer" }}>PROPERTY</Typography>
-                            <Typography sx={{ minWidth: 80, fontSize: 12, cursor: "pointer" }}>ABOUT</Typography>
-                            <Typography sx={{ minWidth: 80, fontSize: 12, cursor: "pointer" }}>AGENTS</Typography>
-                            <Typography sx={{ minWidth: 80, fontSize: 12, cursor: "pointer" }}>BLOG</Typography>
-                        </Box>
-                        
-                        <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-
-                                <img src={searchIcon} alt="" />
-
-                            </IconButton>
-                            <IconButton
-                                size="large"
-                                aria-label="show 17 new notifications"
-                                color="inherit"
-                            >
-                                <img src={cardIcon} alt="" />
-                            </IconButton>
-                            <IconButton
-                                size="large"
-                                edge="end"
-                                aria-label="account of current user"
-                        
-                                aria-haspopup="true"
-                                
-                                color="inherit"
-                            >
-                                <img src={userIcon} alt="" />
-                            </IconButton>
-                        </Box>
-                        <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-                            <IconButton
-                                size="large"
-                                aria-label="show more"
-                              
-                                aria-haspopup="true"
-                                
-                                color="inherit"
-                            >
-                                <img src={userIcon} alt="" />
-                            </IconButton>
-                        </Box>
-                    </Toolbar>
-                </Container> 
+                            <img src={userIcon} alt="" />
+                        </IconButton>
+                    </Box>
+                </Toolbar>
             </AppBar>
-            
+
         </Box>
     );
 }
